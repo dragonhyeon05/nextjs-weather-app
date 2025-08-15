@@ -54,7 +54,6 @@ Untuk menjalankan proyek ini secara lokal, ikuti langkah-langkah berikut:
 1.  **Clone repositori ini:**
     ```bash
     git clone https://github.com/ifauzeee/nextjs-weather-app.git
-    (https://github.com/ifauzeee/nextjs-weather-app.git)
     cd nextjs-weather-app
     ```
 
