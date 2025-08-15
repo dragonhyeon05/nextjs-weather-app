@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://next-weather-app-ifauzeee.vercel.app/" target="_blank">
+  <a href="https://ifauzeee-weather.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Deployed on Vercel" />
   </a>
   <a href="https://github.com/ifauzeee/nextjs-weather-app/blob/main/LICENSE" target="_blank">
@@ -15,7 +15,7 @@
 
 Aplikasi cuaca modern yang dibangun dengan **Next.js 14 (App Router)**, **TypeScript**, dan **Tailwind CSS**. Aplikasi ini menyediakan informasi cuaca *real-time*, prakiraan cuaca harian dan per jam, kualitas udara, serta peta interaktif dengan lapisan cuaca. Desainnya yang bersih dan responsif memastikan pengalaman pengguna yang optimal di berbagai perangkat.
 
-### [➡️ Live Demo](https://next-weather-app-ifauzeee.vercel.app/)
+### [➡️ Live Demo](https://ifauzeee-weather.vercel.app/)
 
 ---
 
