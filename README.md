@@ -1,7 +1,7 @@
 #  Weather App Next.js 🌦️
 
 <p align="center">
-  <img src="https://i.ibb.co/L5YV9Y7/weather-app-showcase.png" alt="Weather App Showcase" width="800"/>
+  <img src="https://i.postimg.cc/0QFjdVyt/Screenshot-2025-08-16-at-03-52-37-Weather-App.png" alt="Weather App Showcase" width="800"/>
 </p>
 
 <p align="center">
