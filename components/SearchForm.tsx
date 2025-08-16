@@ -54,17 +54,21 @@ export function SearchForm() {
 
     return () => clearTimeout(timer);
   }, [query, city]);
-
-  const handleSelection = (selectedCity: string) => {
-    setCity(selectedCity);
-    setQuery(selectedCity);
-    router.push(`/?city=${encodeURIComponent(selectedCity)}`);
-    setSuggestions([]);
-    // Hilangkan fokus dari input
-    inputRef.current?.blur();
+  
+  // FUNGSI HANDLE SELECTION YANG SUDAH DIPERBARUI
+  const handleSelection = (selectedCity: string | null) => {
+    // Hanya proses jika nilai tidak null atau kosong
+    if (selectedCity) {
+      setCity(selectedCity);
+      setQuery(selectedCity);
+      router.push(`/?city=${encodeURIComponent(selectedCity)}`);
+      setSuggestions([]);
+      // Hilangkan fokus dari input
+      inputRef.current?.blur();
+    }
   };
   
-  // **FUNGSI BARU UNTUK MENANGANI SUBMIT DENGAN ENTER**
+  // FUNGSI UNTUK MENANGANI SUBMIT DENGAN ENTER
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (query) {

@@ -24,7 +24,8 @@ export default function RootLayout({
         {/* --- PERBAIKAN: Hapus tag <link> untuk CSS Leaflet --- */}
         {/* CSS Leaflet sekarang diimpor langsung di dalam komponen WeatherMap */}
       </head>
-      <body className={`${inter.className} antialiased`}>
+      {/* ⬇️ PERUBAHAN DI SINI: Ditambahkan 'overflow-x-hidden' */}
+      <body className={`${inter.className} antialiased overflow-x-hidden`}> 
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
