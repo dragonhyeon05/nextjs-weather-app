@@ -1,89 +1,77 @@
-# 🌦️ Next Weather App
+#  Weather App Next.js 🌦️
 
-Aplikasi cuaca modern yang dibangun menggunakan Next.js dan TypeScript, menyediakan informasi cuaca real-time, prakiraan, dan data lingkungan secara mendetail. Didesain dengan antarmuka yang bersih, responsif, dan interaktif.
+<p align="center">
+  <img src="https://i.postimg.cc/0QFjdVyt/Screenshot-2025-08-16-at-03-52-37-Weather-App.png" alt="Weather App Showcase" width="800"/>
+</p>
 
-![Screenshot Aplikasi Cuaca](https://via.placeholder.com/800x450.png?text=Screenshot+Aplikasi+Anda)
-*Tampilan Halaman Utama di Mode Gelap dan Terang*
+<p align="center">
+  <a href="https://ifauzeee-weather.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Deployed on Vercel" />
+  </a>
+  <a href="https://github.com/ifauzeee/nextjs-weather-app/blob/main/LICENSE" target="_blank">
+    <img src="https://img.shields.io/github/license/ifauzeee/nextjs-weather-app?style=for-the-badge&color=blue" alt="License MIT" />
+  </a>
+</p>
+
+Aplikasi cuaca modern yang dibangun dengan **Next.js 14 (App Router)**, **TypeScript**, dan **Tailwind CSS**. Aplikasi ini menyediakan informasi cuaca *real-time*, prakiraan cuaca harian dan per jam, kualitas udara, serta peta interaktif dengan lapisan cuaca. Desainnya yang bersih dan responsif memastikan pengalaman pengguna yang optimal di berbagai perangkat.
+
+### [➡️ Live Demo](https://ifauzeee-weather.vercel.app/)
 
 ---
 
 ## ✨ Fitur Utama
 
--   **Cuaca Real-time:** Dapatkan data cuaca terkini termasuk suhu, suhu terasa, kelembapan, kecepatan angin, dan tekanan udara.
--   **Pencarian Kota Cerdas:** Cari kota di seluruh dunia dengan fitur *autocomplete* untuk hasil yang cepat dan akurat.
--   **Geolokasi Otomatis:** Deteksi lokasi pengguna secara otomatis untuk menampilkan cuaca lokal saat pertama kali membuka aplikasi.
--   **Prakiraan Cuaca Lengkap:**
-    -   Prakiraan cuaca harian hingga 5 hari ke depan.
-    -   Grafik interaktif untuk suhu per jam dalam 24 jam.
-    -   Grafik probabilitas hujan untuk 5 hari mendatang.
--   **Peta Cuaca Interaktif:** Peta dinamis dari Leaflet yang menampilkan lokasi saat ini beserta lapisan (layer) untuk awan dan curah hujan.
--   **Data Lingkungan:** Informasi kualitas udara (AQI) dan detail polutan seperti PM2.5, Ozon, dan lainnya.
--   **Lokasi Favorit:** Simpan dan akses kota-kota favorit Anda dengan mudah.
--   **Pengaturan Kustom:** Ubah satuan suhu (Celsius/Fahrenheit) dan kecepatan angin (m/s / km/h) sesuai preferensi.
--   **Mode Terang & Gelap:** Tampilan yang nyaman di segala kondisi pencahayaan dengan *toggle* tema yang mulus.
--   **Desain Responsif:** Tampilan optimal di berbagai perangkat, mulai dari desktop hingga mobile.
--   **Peringatan Cuaca:** Menampilkan peringatan cuaca penting dari sumber data.
+-   **Pencarian Kota Dinamis**: Cari cuaca untuk kota mana pun di seluruh dunia dengan saran pelengkapan otomatis.
+-   **Data Cuaca Real-time**: Dapatkan suhu terkini, kondisi cuaca, kelembapan, kecepatan angin, dan tekanan udara.
+-   **Prakiraan Cuaca 5 Hari**: Lihat ramalan cuaca untuk lima hari ke depan, termasuk suhu maksimum dan minimum.
+-   **Grafik Interaktif**: Visualisasikan prakiraan suhu per jam dan probabilitas hujan harian dalam bentuk grafik yang mudah dibaca.
+-   **Peta Cuaca Interaktif**: Lihat lokasi kota pada peta dengan lapisan dinamis untuk awan dan curah hujan.
+-   **Kualitas Udara & Polutan**: Pantau Indeks Kualitas Udara (AQI) dan level polutan utama seperti PM2.5, Ozon, dan lainnya.
+-   **Geolokasi**: Secara otomatis mendeteksi dan menampilkan cuaca berdasarkan lokasi pengguna saat ini.
+-   **Mode Terang & Gelap**: Tampilan yang nyaman di segala kondisi pencahayaan dengan *toggle* tema yang elegan.
+-   **Pengaturan Kustom**: Ubah satuan suhu (Celsius/Fahrenheit) dan kecepatan angin (m/s atau km/h) yang tersimpan secara lokal.
+-   **Lokasi Favorit**: Simpan dan akses cepat kota-kota favorit Anda langsung dari halaman utama.
+-   **Desain Responsif & Modern**: Tampilan optimal di perangkat desktop maupun mobile, dibangun dengan shadcn/ui dan Framer Motion untuk animasi yang mulus.
 
----
+## 🛠️ Tumpukan Teknologi
 
-## 🛠️ Teknologi yang Digunakan
+-   **Framework**: [Next.js](https://nextjs.org/) 14 (App Router)
+-   **Bahasa**: [TypeScript](https://www.typescriptlang.org/)
+-   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+-   **Manajemen State**: [Zustand](https://github.com/pmndrs/zustand) (dengan `persist` middleware)
+-   **Animasi**: [Framer Motion](https://www.framer.com/motion/)
+-   **Grafik**: [Recharts](https://recharts.org/)
+-   **Peta**: [React Leaflet](https://react-leaflet.js.org/) & [Leaflet](https://leafletjs.com/)
+-   **Komponen UI**: [shadcn/ui](https://ui.shadcn.com/) (termasuk Radix UI & Headless UI)
+-   **Validasi Skema**: [Zod](https://zod.dev/)
+-   **Testing**: [Jest](https://jestjs.io/) & [React Testing Library](https://testing-library.com/)
+-   **Deployment**: [Vercel](https://vercel.com/)
 
--   **Framework:** [Next.js](https://nextjs.org/) 14 (App Router)
--   **Bahasa:** [TypeScript](https://www.typescriptlang.org/)
--   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
--   **UI & Komponen:**
-    -   [shadcn/ui](https://ui.shadcn.com/)
-    -   [Framer Motion](https://www.framer.com/motion/) untuk animasi
-    -   [Lucide React](https://lucide.dev/) untuk ikon
--   **Manajemen State:** [Zustand](https://github.com/pmndrs/zustand)
--   **Grafik & Chart:** [Recharts](https://recharts.org/)
--   **Peta:** [Leaflet](https://leafletjs.com/) & [React-Leaflet](https://react-leaflet.js.org/)
--   **Validasi Skema:** [Zod](https://zod.dev/)
--   **Pengujian:** [Jest](https://jestjs.io/) & [React Testing Library](https://testing-library.com/)
+## 🚀 Instalasi dan Menjalankan Proyek
 
----
-
-## 🚀 Memulai Proyek
-
-Untuk menjalankan proyek ini di lingkungan lokal Anda, ikuti langkah-langkah berikut.
-
-### Prasyarat
-
-Pastikan Anda telah menginstal:
--   [Node.js](https://nodejs.org/) (versi 18.17 atau lebih tinggi)
--   `npm` atau manajer paket lainnya
-
-### Instalasi
+Untuk menjalankan proyek ini secara lokal, ikuti langkah-langkah berikut:
 
 1.  **Clone repositori ini:**
     ```bash
-<<<<<<< HEAD
-    git clone https://github.com/ifauzeee/nextjs-weather-app.git
+    git clone [https://github.com/ifauzeee/nextjs-weather-app.git](https://github.com/ifauzeee/nextjs-weather-app.git)
     cd nextjs-weather-app
-=======
-    git clone [https://github.com/ifauzeee/next-weather-app.git](https://github.com/ifauzeee/next-weather-app.git)
-    cd next-weather-app
->>>>>>> 411875e (fix layout & bug search)
     ```
 
-2.  **Install semua dependency:**
+2.  **Install dependensi:**
+    Disarankan menggunakan `npm` untuk instalasi.
     ```bash
     npm install
     ```
 
-3.  **Konfigurasi Environment Variables:**
-    Buat file bernama `.env.local` di root proyek dan salin konten di bawah ini.
-
-    ```env
-    # Kunci API dari OpenWeatherMap (untuk data cuaca saat ini & AQI)
-    # Dapatkan di: [https://openweathermap.org/api](https://openweathermap.org/api)
-    NEXT_PUBLIC_OPENWEATHER_API_KEY=GANTI_DENGAN_API_KEY_ANDA
-
-    # Kunci API dari WeatherAPI (untuk forecast & geocoding)
-    # Dapatkan di: [https://www.weatherapi.com/](https://www.weatherapi.com/)
-    WEATHERAPI_API_KEY=GANTI_DENGAN_API_KEY_ANDA
+3.  **Siapkan Variabel Lingkungan (Environment Variables):**
+    Buat file `.env.local` di root proyek dan isi dengan kunci API Anda.
     ```
-    Ganti `GANTI_DENGAN_API_KEY_ANDA` dengan kunci API yang Anda peroleh dari masing-masing layanan.
+    NEXT_PUBLIC_OPENWEATHER_API_KEY=kunci_api_openweathermap_anda
+    WEATHERAPI_API_KEY=kunci_api_weatherapi_anda
+    ```
+    Anda memerlukan kunci API dari:
+    -   [OpenWeatherMap](https://openweathermap.org/api)
+    -   [WeatherAPI](https://www.weatherapi.com/)
 
 4.  **Jalankan server pengembangan:**
     ```bash
@@ -91,54 +79,20 @@ Pastikan Anda telah menginstal:
     ```
     Buka [http://localhost:3000](http://localhost:3000) di browser Anda.
 
----
-
 ## 📜 Skrip yang Tersedia
 
 -   `npm run dev`: Menjalankan aplikasi dalam mode pengembangan.
--   `npm run build`: Mem-build aplikasi untuk production.
--   `npm run start`: Menjalankan aplikasi yang sudah di-build.
--   `npm run lint`: Menjalankan ESLint untuk memeriksa masalah pada kode.
--   `npm run test`: Menjalankan Jest dalam mode *watch* untuk pengujian.
+-   `npm run build`: Mem-build aplikasi untuk produksi.
+-   `npm run start`: Menjalankan aplikasi hasil build produksi.
+-   `npm run lint`: Menjalankan linter ESLint untuk memeriksa kualitas kode.
+-   `npm run test`: Menjalankan suite pengujian dengan Jest dalam mode *watch*.
 
----
+## 🌐 API yang Digunakan
 
-## 📂 Struktur Proyek
+Proyek ini menggabungkan data dari dua sumber API cuaca untuk memberikan informasi yang lebih kaya dan akurat:
+-   **OpenWeatherMap**: Digunakan untuk data cuaca saat ini, kualitas udara, dan lapisan peta cuaca.
+-   **WeatherAPI**: Digunakan untuk data prakiraan cuaca detail, informasi astronomi (matahari terbit/terbenam), dan peringatan cuaca.
 
-````
+## 📄 Lisensi
 
-<<<<<<< HEAD
 Proyek ini dilisensikan di bawah Lisensi MIT. Lihat file [LICENSE](https://github.com/ifauzeee/nextjs-weather-app/blob/main/LICENSE) untuk detail lebih lanjut.
-=======
-next-weather-app/
-├── app/
-│   ├── api/                \# Rute API untuk data cuaca & geocoding
-│   ├── details/[city]/     \# Halaman detail cuaca
-│   ├── globals.css         \# CSS global & variabel tema
-│   ├── layout.tsx          \# Layout utama aplikasi
-│   ├── loading.tsx         \# Komponen loading global
-│   └── page.tsx            \# Halaman utama
-├── components/
-│   ├── ui/                 \# Komponen UI (Button, Input, Chart)
-│   └── ...                 \# Komponen fungsional (SearchForm, WeatherMap, dll.)
-├── hooks/
-│   ├── useGeolocation.ts   \# Hook kustom untuk akses lokasi
-│   └── useSettingsStore.ts \# Hook kustom (Zustand) untuk manajemen state
-├── lib/
-│   ├── api-schemas.ts      \# Skema Zod untuk validasi data API
-│   ├── types.ts            \# Definisi tipe TypeScript
-│   └── utils.ts            \# Fungsi bantuan (helpers)
-├── public/                 \# Aset statis
-├── tailwind.config.ts      \# Konfigurasi Tailwind CSS
-└── next.config.mjs         \# Konfigurasi Next.js
-
-```
-
----
-
-## 🙏 Ucapan Terima Kasih
-
-Aplikasi ini tidak akan mungkin terwujud tanpa data yang disediakan oleh:
--   [OpenWeatherMap](https://openweathermap.org/api)
--   [WeatherAPI.com](https://www.weatherapi.com/)
->>>>>>> 411875e (fix layout & bug search)
